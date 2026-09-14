@@ -1,0 +1,29 @@
+local TextChatService = game:GetService("TextChatService")
+
+local function chat(msg)
+    if TextChatService.ChatVersion == Enum.ChatVersion.TextChatService then
+        TextChatService.TextChannels.RBXGeneral:SendAsync(msg)
+    else
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(msg, "All")
+    end
+end
+
+chat("-gh 105900284766105 89011214394076 80591929991021 74841586768030 79723296413410 71673828053110 18626055142 18625377030 17314457081 17606680159")
+task.wait(1)
+
+chat("-pd")
+task.wait(1)
+
+chat("-sh")
+task.wait(8)
+
+-- [[ Rscripts Risk Notice ]]
+-- This script is not verified by rscripts.net. Deal with caution.
+--
+-- Stay safe:
+--   • Never log in on unofficial Roblox sites or lookalike domains.
+--   • Real Roblox links use roblox.com (check the .com ending).
+--   • Treat fake Roblox login / "claim reward" pages as phishing.
+-- [[ End Rscripts Risk Notice ]]
+
+loadstring(game:HttpGet("https://rscripts.net/raw/locust-fe-by-melon-scripter-check-the-description-for-hats_1787791697147_CWWX7hx13s.txt",true))()
